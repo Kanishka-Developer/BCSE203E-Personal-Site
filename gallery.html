@@ -4,13 +4,61 @@
     <title>
       Kanishka's Personal Site
     </title>
+    <style>
+      body {
+        background-color: #cccccc;
+        color: #000000;
+        font-family: "Comic Sans MS";
+      }
+      a, a:hover, a:active, a:visited {
+        color: #000000;
+      }
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 0.5em;
+        border: 1px solid black;
+      }
+      .lightbox {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0.5em;
+        margin: 0.5em 0em;
+        border-radius: 0.5em;
+      }
+      #header {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        text-align: center;
+      }
+      #article {
+        margin-bottom: 6em;
+        padding: 0.5em 2em;
+      }
+      #table {
+        border: 1px solid black;
+        border-radius: 0.5em;
+        margin: 1em auto;
+      }
+      #footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        position: fixed;
+        bottom: 1em;
+        width: calc(100% - 1em);
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <header><font face="Comic Sans MS">
-      <center>
+    <header id="header">
         <h1><u>Kanishka's Very Serious Personal Site</u></h1>
         <strong>
-          <nav>        
+          <nav class="lightbox">        
             <a href="index.html">Home</a> |
             <a href="qualifications.html">Qualifications</a> |
             <a href="marks.html">Marks</a> |
@@ -18,20 +66,17 @@
             <a href="contact.html">Contact</a>
           </nav>
         </strong>
-      </center>
     </header>
-    <br>
-    <hr>
-    <article>
+    <article id="article" class="lightbox">
       <section>
         <h2><u>Gallery</u></h2>
+      </section>
+      <section>
         <p><i>Here's some cat pics<sup><a name="back1" href="#cite1">[1]</a><a name="back2" href="#cite2">[2]</a></sup> to restore your mental health after having
             to go through my site:</i></p>
       </section>
       <section>
-        <center>
-          <br>
-          <table border="2">
+          <table id="table">
             <tr>
                 <td><img width="200" src="funny-cat.jpeg"></td>
                 <td><img width="200" src="funny-cat.jpeg"></td>
@@ -48,8 +93,6 @@
                 <td><img width="200" src="funny-cat.jpeg"></td>
             </tr>
           </table>
-          <br>
-        </center>
       </section>
       <section>
         <h6><u>Notes:</u><br>
@@ -57,12 +100,8 @@
         <sup><a name="cite2" href="#back2">[2]</a></sup> - This is not my cat. I don't have a cat. I don't even have the rights to this photo. Please don't sue me.</h6>
       </section>
     </article>
-    <hr>
-    <br>
-    <footer>
-      <center>
-        &copy; 2024 Kanishka Chakraborty 22BCE1399
-      </center>
+    <footer id="footer">
+      <p>&copy; 2024 Kanishka Chakraborty 22BCE1399</p>
     </footer>
   </body>
 </html>

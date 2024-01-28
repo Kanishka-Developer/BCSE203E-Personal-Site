@@ -4,13 +4,61 @@
     <title>
       Kanishka's Personal Site
     </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <style>
+      body {
+        background-color: #cccccc;
+        color: #000000;
+        font-family: "Comic Sans MS";
+      }
+      a, a:hover, a:active, a:visited {
+        color: #000000;
+      }
+      .lightbox {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0.5em;
+        margin: 0.5em 0em;
+        border-radius: 0.5em;
+      }
+      .inline-icon {
+        vertical-align: center;
+        font-size: 1em; 
+      }
+      #header {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        text-align: center;
+      }
+      #article {
+        margin-bottom: 6em;
+        padding: 0.5em 2em;
+      }
+      #cert {
+        border: 1px solid black;
+        border-radius: 0.5em;
+        display:block;
+        margin: 1em auto;
+      }
+      #footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        position: fixed;
+        bottom: 1em;
+        width: calc(100% - 1em);
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <header><font face="Comic Sans MS">
-      <center>
+    <header id="header">
         <h1><u>Kanishka's Very Serious Personal Site</u></h1>
         <strong>
-          <nav>        
+          <nav class="lightbox">        
             <a href="index.html">Home</a> |
             <a href="qualifications.html">Qualifications</a> |
             <a href="marks.html">Marks</a> |
@@ -18,13 +66,12 @@
             <a href="contact.html">Contact</a>
           </nav>
         </strong>
-      </center>
     </header>
-    <br>
-    <hr>
-    <article>
+    <article id="article" class="lightbox">
       <section>
         <h2><u>Qualifications</u></h2>
+      </section>
+      <section>
         <p><i>I have a <b>lot</b><sup><a name="back1" href="#cite1">[1]</a></sup> of qualifications. Here are some of them:</i></p>
       </section>
       <section>
@@ -38,22 +85,28 @@
             </li></i></p>
           </dd>
           <dt>
-            <h3>I've attended some workshops, I guess.</h3>
+            <h3>I have some certificates, I guess.</h3>
           </dt>
           <dd>
-            <p><i><li>"AI Essentials" Workshop by Intel</li><br>
-            <center>
-              <img src="intelcert.png" alt="Intel AI Essentials Workshop Certificate" width="512" border="2">
-            </center>
-            </i></p>
+            <p><i><li>Participated in VITISH 2023 and made it to Top 30</li></i></p>
+            <img id="cert" src="vitishcert.jpeg" alt="VITISH 2023 Certificate" width="512">
+            <p><i><li>Podium finishes at TechnoVIT 2022 and 2023</li></i></p>
+            <img id="cert" src="connextionscert.jpg" alt="Connextions 2022 Certificate" width="512">
+            <img id="cert" src="cirquizzcert.jpg" alt="Cirquizz 2023 Certificate" width="512">
+            <img id="cert" src="stockwarscert.jpg" alt="Stock Wars 2023 Certificate" width="512">
+            <p><i><li>Attended "AI Essentials" Workshop by Intel</li></i></p>
+            <img id="cert" src="intelcert.png" alt="Intel AI Essentials Workshop Certificate" width="512">
+            <p><i><li>Attended "Programming in EMU8086 and Proteus" Workshop</li></i></p>
+            <img id="cert" src="proteuscert.jpeg" alt="Programming in EMU8086 and Proteus Workshop Certificate" width="512">
+            
           </dd>
           <dt>
-            <h3>HackerRank stuff</h3>
+            <h3>HackerRank stuff..?</h3>
           </dt>
           <dd>
             <p><ul>
-              <li><i>Python &rarr; 5</i> &starf;</li>
-              <li><i>C &rarr; 5</i> &starf;</li>
+              <li><i>Python <span class="inline-icon material-symbols-rounded">arrow_right_alt</span> 5</i> <span class="inline-icon material-symbols-rounded">star</span></li>
+              <li><i>C <span class="inline-icon material-symbols-rounded">arrow_right_alt</span> 5</i> <span class="inline-icon material-symbols-rounded">star</span></li>
             </ul></i></p>
           </dd>
         </dl>
@@ -63,12 +116,8 @@
         <sup><a name="cite1" href="#back1">[1]</a></sup> - I don't actually have a lot of qualifications.</h6>
       </section>
     </article>
-    <hr>
-    <br>
-    <footer>
-      <center>
-        &copy; 2024 Kanishka Chakraborty 22BCE1399
-      </center>
+    <footer id="footer">
+        <p>&copy; 2024 Kanishka Chakraborty 22BCE1399</p>
     </footer>
   </body>
 </html>
